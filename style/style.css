@@ -6,3 +6,42 @@ body {
 h1 {
   color: white;
 }
+
+.btn-outline-success {
+  color: #8280c5;
+  border-color: #8280c5;
+}
+
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: #8280c5;
+  border-color: #8280c5;
+}
+
+.navbar {
+  background-color: #fff;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar a.active {
+  font-weight: bold;
+}
