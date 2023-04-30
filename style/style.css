@@ -20,6 +20,37 @@ p {
   color: white;
 }
 
+img {
+  width: 150px;
+  height: auto;
+  border: 1px solid white;
+  margin-right: 2px;
+}
+
+      /* Add a white border to all images */
+      img {
+        border: 1px solid white;
+      }
+      /* Style the container that holds the images */
+      .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+                  }
+      /* Style the individual image and filename */
+      .image-container img {
+        max-width: 100%;
+        height: auto;
+      }
+      .filename {
+        color: white;
+        text-align: center;
+        font-size: 0.8em;
+        margin-top: 0.5em;
+      }
+
 nav {
   background-color: white;
   border: none;
