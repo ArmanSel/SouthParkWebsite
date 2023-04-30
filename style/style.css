@@ -10,3 +10,44 @@ h1 {
 p {
   color: white;
 }
+
+nav {
+  background-color: white;
+  border: none;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 0 0 15px 15px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px; /* reduce font size */
+  background-color: #5b5b88;
+  padding: 10px 7px; /* reduce padding */
+  border-radius: 15px;
+  transition: background-color 0.3s ease-in-out;
+  text-align: center; /* center text */
+}
+
+nav a:hover {
+  background-color: #e9c8ba;
+}
