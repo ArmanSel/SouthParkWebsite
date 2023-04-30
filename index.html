@@ -6,6 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>South Park Website</title>
+    <script>
+      function setCookie(name,value,days) {
+        var expires = "";
+        if (days) {
+          var date = new Date();
+          date.setTime(date.getTime() + (days*24*60*60*1000));
+          expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+      }
+    
+      function getCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+          var c = ca[i];
+          while (c.charAt(0)==' ') c = c.substring(1,c.length);
+          if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+      }
+    
+      function eraseCookie(name) {   
+        document.cookie = name+'=; Max-Age=-99999999;';  
+      }
+    
+      function cookieConsent() {
+        if (!getCookie('cookieconsent')) {
+          var consentMsg = 'This website uses cookies to ensure you get the best experience on our website. ';
+          consentMsg += '<a href="/privacy-policy.html" target="_blank">Learn more</a>.';
+          var consentDiv = document.createElement('div');
+          consentDiv.id = 'cookieconsent';
+          consentDiv.innerHTML = consentMsg;
+          consentDiv.style.background = '#000000';
+          consentDiv.style.color = '#ffffff';
+          consentDiv.style.position = 'fixed';
+          consentDiv.style.bottom = '0';
+          consentDiv.style.left = '0';
+          consentDiv.style.width = '100%';
+          consentDiv.style.padding = '10px';
+          consentDiv.style.zIndex = '9999';
+          consentDiv.style.textAlign = 'center';
+          consentDiv.style.fontFamily = 'Arial, sans-serif';
+          document.body.appendChild(consentDiv);
+          setCookie('cookieconsent', true, 365);
+        }
+      }
+    
+      window.onload = function() {
+        cookieConsent();
+      };
+    </script>
+    
 </head>
 <body>
   <nav>
@@ -14,7 +67,7 @@
       <li><a href="styleguide.html">Styleguide</a></li>
       <li><a href="#">Webseitenkonzept</a></li>
       <li><a href="#">Galerie</a></li>
-      <li><a href="#">Impressum</a></li>
+      <li><a href="impressum.html">Impressum</a></li>
       <li><a href="urheberrecht.html">Urheberrecht</a></li>
       <li><a href="#">Minifilmprojekt</a></li>
       <li><a href="#">Animationen CSS</a></li>
