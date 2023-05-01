@@ -22,7 +22,7 @@
             <li><a href="#">Reflexion</a></li>
         </ul>
     </nav>   
-
+    <audio src="towelie.mp3" autoplay></audio>
     <div class="image-container">
       <div>
         <img src="pic1.bmp" alt="pic1">
@@ -58,5 +58,59 @@
       </div>
         </div>
 
+        <p>
+          JPEG (Joint Photographic Experts Group) ist ein verlustbehaftetes Bildformat, das für die Komprimierung von Fotos verwendet wird. <br> Die Dateigröße hängt von der Komprimierung ab, die angewendet wurde, um das Bild zu erstellen. Eine höhere Kompressionsrate führt zu einer <br> kleineren Dateigröße, aber auch zu einer geringeren Bildqualität. JPEG eignet sich gut für Fotos, da es in der Lage ist, eine große Anzahl <br> von Farben und Details zu speichern.
+
+<br> <br> BMP (Bitmap) ist ein unkomprimiertes Bildformat, das für die Speicherung von Bildern ohne jegliche Komprimierung verwendet wird. <br> Dies bedeutet, dass BMP-Dateien in der Regel größer sind als komprimierte Dateiformate wie JPEG. BMP eignet sich gut für <br> die Speicherung von Grafiken oder Bildern, bei denen die Qualität oberste Priorität hat und die Dateigröße nicht so wichtig ist.
+
+<br> <br> JPG (Joint Photographic Group) ist dasselbe wie JPEG und steht für das gleiche Bildformat. <br> Es gibt keinen Unterschied zwischen JPG und JPEG.
+
+<br> <br> GIF (Graphics Interchange Format) ist ein verlustfreies Bildformat, das für einfache Grafiken, Animationen und kurze Videoclips verwendet wird. <br> Es ist in der Lage, eine begrenzte Anzahl von Farben (in der Regel bis zu 256) zu speichern, was zu einer kleineren Dateigröße führt. <br> GIF eignet sich gut für einfache Grafiken und Animationen, aber nicht für komplexe Bilder oder Fotos mit vielen Farben und Details.
+        </p>
+
+          <div class="video-container">
+            <div>
+              <video controls>
+                <source src="vid1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="filename">vid1.mp4</div>
+            </div>
+            <div>
+              <video controls>
+                <source src="vid1.webm" type="video/webm">
+                Your browser does not support the video tag.
+              </video>
+              <div class="filename">vid1.webm</div>
+            </div>
+            <div>
+              <video controls>
+                <source src="vid1.mkv" type="video/x-matroska">
+                Your browser does not support the video tag.
+              </video>
+              <div class="filename">vid1.mkv</div>
+            </div>
+          </div>
+        </div>
+        <p>
+<br> <br> Das Dateiformat WebM ist ein Container-Format für Video- und Audiodaten, welches von Google entwickelt wurde. Es wurde speziell für das Web entwickelt und ist dafür optimiert, bei niedrigen Datenraten eine hohe Videoqualität zu liefern. WebM basiert auf dem VP8-Videocodec und dem Vorbis-Audiocodec und ist in der Regel kleiner als das konkurrierende Format MP4. Dies liegt daran, dass VP8 eine bessere Kompression bietet als andere Codecs und Vorbis ebenfalls sehr effizient ist.
+
+<br> <br> Das Dateiformat MKV steht für Matroska Video und ist ein offenes Container-Format, welches mehrere Video-, Audio- und Untertitelspuren sowie Metadaten in einer einzigen Datei speichern kann. Matroska ist ein flexibles Format und unterstützt viele verschiedene Codecs, darunter auch verlustfreie Audio-Codecs wie FLAC. Allerdings ist MKV in der Regel größer als andere Container-Formate wie MP4 oder WebM, da es weniger effiziente Komprimierungsalgorithmen verwendet.
+
+<br> <br> MP4 steht für MPEG-4 Part 14 und ist ein Container-Format, das Video-, Audio- und Untertitelspuren sowie Metadaten in einer einzigen Datei speichern kann. Es ist ein weit verbreitetes Format und wird von den meisten Geräten und Betriebssystemen unterstützt. MP4 verwendet eine effiziente Komprimierung, um eine gute Videoqualität bei relativ kleinen Dateigrößen zu liefern. Es ist jedoch nicht so effizient wie das WebM-Format, da es auf dem H.264-Videocodec basiert, der eine geringere Kompression bietet als der VP8-Codec.
+        </p>    
+        <audio id="play-button" src="towelie.aac"></audio>
+        <button onclick="document.getElementById('play-button').play()">Play towelie.aac</button>
   </body>
+  <p>
+    MP3 und AAC sind beide verlustbehaftete Audio-Dateiformate, die eine hohe Kompressionsrate aufweisen, um die Größe der Audiodatei zu reduzieren. Die Größe der Datei hängt von verschiedenen Faktoren ab, wie z.B. der Bitrate, der Abtastrate, der Länge des Musikstücks und der Anzahl der Audio-Kanäle.
+
+Die Bitrate bestimmt, wie viele Bits pro Sekunde zur Übertragung des Audiosignals verwendet werden. Eine höhere Bitrate führt zu einer höheren Klangqualität, aber auch zu einer größeren Dateigröße. Die Abtastrate gibt an, wie oft pro Sekunde das Audiosignal gemessen wird. Eine höhere Abtastrate führt ebenfalls zu einer höheren Klangqualität und einer größeren Dateigröße.
+
+Ein weiterer Faktor, der die Größe der Datei beeinflusst, ist die Länge des Musikstücks. Eine längere Audio-Datei wird in der Regel eine größere Dateigröße haben als eine kürzere Datei mit denselben Bitrate- und Abtastrate-Einstellungen.
+
+Die Anzahl der Audio-Kanäle kann auch einen Einfluss auf die Dateigröße haben. Stereo-Audio, das aus zwei Kanälen besteht, benötigt im Allgemeinen mehr Speicherplatz als Mono-Audio, das aus einem Kanal besteht.
+
+Insgesamt können MP3- und AAC-Dateien aufgrund ihrer hohen Kompressionsrate relativ klein sein, während die Klangqualität immer noch akzeptabel ist. Je höher jedoch die Bitrate und Abtastrate sind, desto größer wird die Datei.
+  </p>
 </html>
