@@ -27,6 +27,57 @@ img {
   margin-right: 2px;
 }
 
+#triangle {
+  fill: #e9c8ba;
+  animation: triangleAnimation 2s ease-in-out infinite alternate;
+}
+@keyframes triangleAnimation {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.box {
+  height: 100vh;
+  background-color: rgba(101, 101, 255, 0.256);
+  opacity: 0;
+  transform: translateY(20%);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.rotate {
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+  }
+  
+  .circle:hover {
+  transform: scale(1.2);
+  }
+
+  .rotate-on-hover {
+    transition: transform 0.5s ease;
+  }
+  
+  .rotate-on-hover:hover {
+    transform: rotate(360deg);
+  }  
+
       /* Add a white border to all images */
       img {
         border: 1px solid white;
